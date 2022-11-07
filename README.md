@@ -9,13 +9,22 @@ To create a dashboard with all collected data.
 Implementation in Python
 
 #### Plugins and others
-- pyodbc
-- Adafruit_DHT
-- Thingspeak
+
+| Plugins             | Source                                                                 |
+| ----------------- | ------------------------------------------------------------------ |
+| pyodbc | https://pypi.org/project/pyodbc/ |
+| Adafruit_DHT | https://github.com/adafruit/Adafruit_Python_DHT.git |
+| Thingspeak | https://thingspeak.com/ |
+| Portal Azure | https://portal.azure.com/ |
+| Raspberry Pi 4B | https://www.raspberrypi.com/products/raspberry-pi-4-model-b/ |
+
 
 ___
 
-##### Author: Hemant Ramphul
+##### 🚀 About Me
+I'm a full stack developer... <br>
+ <br>
+Author: Hemant Ramphul <br>
 Github: https://github.com/hemantramphul/Raspberry-Pi-DHT11-Sensor <br>
 Date: 31 October 2022 <br>
 
