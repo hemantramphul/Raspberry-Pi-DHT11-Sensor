@@ -28,6 +28,8 @@ Author: Hemant Ramphul <br>
 Github: https://github.com/hemantramphul/Raspberry-Pi-DHT11-Sensor <br>
 Date: 31 October 2022 <br>
 
+___
+
 ##### Université des Mascareignes (UdM)
 Faculty of Information and Communication Technology <br>
 Master Artificial Intelligence and Robotics <br>
