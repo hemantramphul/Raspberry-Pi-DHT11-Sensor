@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1005.1835                               -->
+<workbook original-version='18.1' source-build='2022.3.0 (20223.22.1005.1835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='HumitureSensor (IoT_UDM_Database)' inline='true' name='federated.0ivr3g704l6bfm12ug0wd07ya2an' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tcp:iot-hramphul.database.windows.net,1433' name='sqlserver.0sk6grn0txi6cg1c0hxow0807son'>
+            <connection authentication='sqlserver' class='sqlserver' dbname='IoT_UDM_Database' odbc-native-protocol='yes' one-time-sql='' server='tcp:iot-hramphul.database.windows.net,1433' username='hramphul' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='sqlserver.0sk6grn0txi6cg1c0hxow0807son' name='HumitureSensor' table='[dbo].[HumitureSensor]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='sqlserver.0sk6grn0txi6cg1c0hxow0807son' name='HumitureSensor' table='[dbo].[HumitureSensor]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[HumitureSensor]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HumitureSensor_A7592B3323D149DA904DD61A6458971B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temperature</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Temperature]</local-name>
+            <parent-name>[HumitureSensor]</parent-name>
+            <remote-alias>Temperature</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HumitureSensor_A7592B3323D149DA904DD61A6458971B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Humidity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Humidity]</local-name>
+            <parent-name>[HumitureSensor]</parent-name>
+            <remote-alias>Humidity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HumitureSensor_A7592B3323D149DA904DD61A6458971B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='HumitureSensor' datatype='table' name='[__tableau_internal_object_id__].[HumitureSensor_A7592B3323D149DA904DD61A6458971B]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Mauritius&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Id' />
+        <field-sort-custom-order field='Temperature' />
+        <field-sort-custom-order field='Humidity' />
+        <field-sort-custom-order field='Calculation_942096782444478464' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='HumitureSensor' id='HumitureSensor_A7592B3323D149DA904DD61A6458971B'>
+            <properties context=''>
+              <relation connection='sqlserver.0sk6grn0txi6cg1c0hxow0807son' name='HumitureSensor' table='[dbo].[HumitureSensor]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{09291E3D-46E5-408F-8E71-AA5283878209}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HumitureSensor (IoT_UDM_Database)' name='federated.0ivr3g704l6bfm12ug0wd07ya2an' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ivr3g704l6bfm12ug0wd07ya2an'>
+            <column datatype='integer' name='[Humidity]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Temperature]' role='measure' type='quantitative' />
+            <column-instance column='[Humidity]' derivation='None' name='[none:Humidity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='None' name='[none:Temperature:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1644198894500732' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ivr3g704l6bfm12ug0wd07ya2an].[none:Temperature:qk]</rows>
+        <cols>[federated.0ivr3g704l6bfm12ug0wd07ya2an].[none:Humidity:qk]</cols>
+      </table>
+      <simple-id uuid='{37880F9C-567F-49AB-9DE3-1621C7D97623}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AAD37316-64CA-4145-A494-06A0D451A46E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ivr3g704l6bfm12ug0wd07ya2an].[none:Humidity:qk]</field>
+            <field>[federated.0ivr3g704l6bfm12ug0wd07ya2an].[none:Temperature:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8A0855F4-9517-4C8B-9DDC-39A8051478A8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAATe0lEQVR4nO2dS0wrWX7Gvyq/MRgw2ICNbcA0cN/dN/1Qd0uZTI+mNZN0epVFZhUpo2yj
+      rLLKorPIMqusoyxHI0XKIpEiRZpJa6JMT6sz3c19cHljMG9s4wd+lavqZMG1L3BtLlWnyq57
+      6/+TrsAXzt9fnaqPOlX1+RyBMcZAEDZF7LUAguglhhtAUZTW96qqQlVVrnqNRoNX0iVNemCM
+      cddQFAW8J1teDUbUMKoveDGqhuXPAJIkcdcwYpRnhZEibYfxNXQboF6t4KxSBWMqisUiVJM6
+      VhQt71HiNcapr5mCpaVnUFUgFApAUoCTfBXJ+Jix6gjCZPQZgAFMVdBQBNTqQHJuCptru1AU
+      Baqqtk5Pza881wGyLEOWZd3tAWPGi6qqculoXg8JgqC7hhXGzoyx1r9eaTCyhk4DqBBFJ5yM
+      oX/Ag8eLTxCKTMPhcABA62vzwOcZxoiiCKdT54nqAjw1mjubp4aiKBBFkcsAvBqMqMEYg6qq
+      rX3cCw2G1tDVSnTh7T942HoZicS5hXSC94AhiOuw/BUmXQQTZmL5o4v3OQJBXIflDWCF+9bE
+      m4vlDUAQZmJ5A9A1AGEmdHQRtsbyBqCLYMJMLG8AgjATyxuAHoQRZqLPAKqMjbUVLC+vQ1Zl
+      pFLbkFVKgxKvH/qOLsGB6eRbYKyB3Y11BAb92NjaM1jaOUaEngiiE/qyQIIAuVqAu28Iav0M
+      gcEAspkzU9KgvClMgNKgRtagNOhzcrkSYpOTqOWP8PTxM0QSs5QGvQZKgxqnwdAaehuOT8YA
+      AO6RcTwYGecW0gnejiaI67D8FSY9ByDMxPIGoDAcYSaWNwBBmInlDUDPAQgzoaOLsDX895FM
+      5F+/XEKlWoPX68Ef3k9gfKS/15KINwxLG+AXv3oCWTm/CzQbDZIBCMOhIRBha8gAhK3RbYBC
+      9ghrmzuQ6xWsrKygKvHldQiiF+i8BpDx7NkaRqIJpLd3MBmLYmdnH3PJ2KWg1NWvvOitwxve
+      4n1/ozRYoYYRYTgrbEezhk4DqPD0DaGvUcSx7MKkxw3hQsc04wtGxhh41hq4qInn/XmCbE0N
+      RtTggbfG1X3cCw1G1tBpADdCIz6cVlTMx0bx7OkqEsk5iKIIxlgrwNbc2UY8zBJFUXcw7qIm
+      ve15awDgToMaocGIvuBNg1phO5o1dN8GnUwkMfn8+/v3h7mEEESvoLtAhK0hAxC2hgxA2Boy
+      AGFryACErSEDELaGDEDYGjIAYWvIAISt0W2AzdVnWFrdRK10ikePHqNQrhupiyC6gu4oRL6Q
+      hz8Ywf7BCW7dnsPW1iEGkrFLAaVm+MuIJKaqqrqnw+Npa1SN5pSRPFkgK2yHESlMK2xHs4bu
+      NOjtew+RXllBzedBoyGBCQKE5/+uht+MCcO9XPfGalWVSwNjDKIoGlKD1wC8fWlEX/DWsMJ2
+      NGvoPgOcHOxCGAzirfFhbKR2EZ9OtgzQ3MlXv/Ih6K5zUROXAo4aV/uGpwYPVqhhBQ3NGjoN
+      ICI2nWy9WliY5xJCEL2C7gIRtoYMQNgaMgBha8gAhK0hAxC2hgxA2BoyAGFryACErSEDELZG
+      dxTi7PQIXy1u4MHsOPYyBQTDcSQiI0ZqIwjT0WUApjawvn2IYMCHwpmM+w/uYnNtF4oyZPhC
+      2U14FqqmhbKNq0ELZQMAA0KjQWxsphAa6sfjxScYCsdMWSi7Ce+C2bRQtjE1aKFsAILDhehk
+      DJHo+eSIMW4ZBNEbuCxkTMyZIHoH3QUibA0ZgLA1ZADC1pABCFtDBiBsDRmAsDVkAMLWkAEI
+      W6PbAOVSAYVSGYypyOfzUA1aC5gguonOJ8EM5XIZ6Z19jIQGwSAiU6hhNjFurDqCMBmdBhDg
+      FIG6rEKSgORc/HkaVKE06DXtKQ1qjAYja3Q0wPbqY+QkJ8LBIKKRsatNkcsV4HGK6B/w4vHi
+      E4SiM5QGvQZKgxqnwdAanX6QPszgrJRD/nSyjQEcmF241XoViVAelHg96WiAycg4ssUhLNy5
+      2009BNFVOo5N1p5+j4OTLA6OMt3UQxBdpaMBfH192E+tY+8w2009BNFVOg6Bbj14H5OzZ9g9
+      LHZTD0F0lY4GyGWOUawqSM7OdFMPQXSVtkOgauEEX/7vV8jns1jbSHVZEkF0j7YG8PQP453b
+      c8jlCgiO0Fw/xJtLWwOIDifqcGEiPIBKMd9tTQTRNTpeA0xPJ1HKHsIXmuymHoLoKh1vgy5/
+      /zXK8MLnbv/Iu5A9xvbuIZjSwNbmFmSV0qDE60dHA4yFg9jZTuE4034IpAhO1HInWNtYx9BI
+      ABtbe6aJJAiz6DgEyhRqUGo5nJxkgLnElZ8ylEtFDEciqJxm4XF7IKBsuTTo7kkJf/fP/w0w
+      AALwT3/9Ewz0ubv2/lfbUxrUGA1G1uj8IOytafzHr4/xwwftskAqyqUSSmUJMzNRpFJpxKdn
+      LZcGFQQBpYr0ooZDX6KU0qAveNPSoB2PzGcbO/jsJz/Ek0eP2vzUgYW793D79hy8Xj8WFhbQ
+      5+EXQxDdpqMBvA4V//Pbr7GbWkfqINdNTQTRNTr+2a7X6/B5fVi4/x6mJoLd1EQQXaPjGUBR
+      VNCNTeJNp/PAXRQxHBiCz6vvrglBvA50PAPcu/cAgaEg+n3ebuohiK7S8QywtLwMuL0ol84Q
+      Hnm3m5oIomu0PQNUKhVMToxjbyuFwTHKAhFvLm3PAN/+7kvAHUBsagYuvucdBGFp2hrAPziC
+      mdkFAIDb6+uqIILoJm0N8PbD91/5yH4/tYqacwihPobN9CEiiVmEhvymiCQIs2hrgJvkVUZC
+      YaSOSzjJ1HDn3i1sbewjOOC1VBhOUS8HphRF0R1oe93DcOnjItInJaiqiuEBH+5MjeqqY5sw
+      3KtoBpFEyCiVSlBFp+XCcA7x8gWMw+GwbRjuq6U9/PLXTwEAd6fD+Ie/+kRXHduE4a5HRTq9
+      B6VawvjULPLZIpLTUW4xBNFtdFpIxNTsfOvV9My0QXIIorvQCjGErSEDELaGDEDYGjIAYWvI
+      AIStIQMQtoYMQNgamsqhDf/+21VU6w0AwAe3ooiPDfZYEWEWZIA2/NtvniFbrAIAwkN+MsAb
+      DLcBckdp7BxkEI7OIBKiA8VK/OMvv8La7vkSVxcnCCNewG2AfKGGew/uni+UHeyHLMuo1+sQ
+      RbGVnhQEAQ6HoxWkAtAKhjVTfYIgQBTFS2nSzz+cQaVShcvtxtOtI6ymz3fmWLAfR7mzloaf
+      vjcFp0No1QXOg3guUcXnH85AgACVqVAaEioV9aX3udgGAH78MI6aJENRVYQCLlQqFQCAJEkd
+      2zT1X0wpOhyO1vs0A2SCILTayIqK//xmu/X7P7g/ieEridqL79OscVV/u74FgKNcCQfZ835a
+      iAUxFx2EyhjGgv2o1Wqa94coimCMtYJ9N2mzfXyGR5snAIB+nwufvB0DYwz1eh2/XzvCfva8
+      b6fHB3F3KnjjvgWA4lkV//X7F/33o3dirQnaXrU/mvW5DeBxATupHQgefysh6PF4Lm2A3jTo
+      X/zxu6hWq/D5fPjiX77Ed2uHAIAHs2NYXD9q/d7nH8+jz+t6qb3f78fP//R9yLKsKTn4s0/f
+      ufS6udONToOeVSX84ldPWq/fvxXFhLfzJARat8N5IbH5zlwEf/6ju5prXEVrGnTrcK+1jfFw
+      AJ99NN/S8M3KEX6zeH4A//jdGXxw5+brTcuyjEqjfqn/fvB2An7/zT+TIssyvwEiU0kU8kUE
+      hmj4Q7x+cBtAEEQMDQ8ZoaUtRnyYhiA6Qc8BCFtj+dugvJ+gInqLy+mA//n1mc/z8nVar7G8
+      AYz4OCXROz59L4lP30v2WkZHLH900TUAYSaWNwDP7AME8SosbwCCMBPLG4B3+g2CuA7LXwS3
+      GwKNDfvxN3/2Qeu1myYwJXSi2wCKVENZYhjwOZHa2UMskYBTNP6WZbuL4IE+D374kKZisTtu
+      pwNvz463Xntc2g9n3QY42N1CkfnhV8oYCoexsbWH+SRNpU50j8F+L/7+L/+Iq4ZmA1RLpzgu
+      SpiMxlDeP4WiODEQGEDmpGTKQtnNOTkvDoW0ztNpxDySZswNelXXq+Yu1bod7frMSgtlM/bi
+      uGCMdX2f6pob1DcwjMSAiq2VJWROK5ifSeDp42eIJMxZKNvlcsHpdF46cPTME8qbgOSt0S4N
+      6nBc/sNwk7lLtWj47KM5fPg8YTkfH2m1tcpC2YLw4rgQBKGr+7RVQ18zEdPzd9EchY+Gx7iF
+      dMIIp9uVj+/Fey3B8lj+NihBmInlDUBhOMJMLG8ACsMRZmL5o4vCcISZWN4AFIYjzMTyBiAI
+      M7G8AegagDATOroIW2N5A9BFMGEmug1wuLeNlY1tNGplLC+voFrXn5MhiF6hO0wRGA4hv76B
+      zZ0aYokIdtL7mEvGLgWlrn7VC2MMHteL2QVcDlFTTd7wlhHb0VbDldev0sm7HUbUMCIM96L9
+      y9uvvYZ+GGP606Co5TEUiaGSO4bb5YZwoWOaw5Zm+pF3GKOqKv72Zx+99H835aImHg08T6Wb
+      Gi7WUNsY4DqdRmwHb42r+5hHw8XN11rTqL7QmQZV8Pi7PTjqx4jHQni2tIpEcq41eWozKdjc
+      2bx3cniThxc16W3PWwPAS2lQUVRe+vl172GEBiP6gjcN2tRwsS+aEyhrrcGDLgOc48C9dx62
+      Xt2/P8wlhCB6heXvAhGEmVjeADQrBGEmljcAZYEIM7G8AehBGGEmljcAQZiJ5Q1AYTjCTCx/
+      dNFHIgkzsbwBaFYIwkwsbwCCMBOdT4IZUusrKNUFJONhrG/tIpGcw6DfY6w60BDoTeaTh1OY
+      j48AAOLh3qwyqtMAAoIjI8ht7GP38AS37sxha/MQA8nYpduWze95k4O8wyBVVXteozll5KUw
+      3JV6r3oPK2yHESnMpob7M2Hcnwm3/l+LLqP6QmcatI7wcABeRwOS7IFUl8AEAcLzf1fv3PDe
+      yeFtr6oqdw3GGFeNZvurUzxeRBBf7ruLGLEdvDWaYTieGlbYjmYN3XOD7mxuwBkIYSoawtZ2
+      GvHpZMsAzZ189atejGjPG2Xm1XG1b57/5+XfwfU6ebfDKjWsoKFZQ/fcoPGZt1qv5ufnuYQQ
+      RK+w/F0gehBGmAkdXYStsbwBKAxHmInlDUAQZmJ5A9CDMMJMLG8AuggmzMTy6wS/yWE4l1PE
+      5x/PtV6bESUhrsfyBniT8bic+PmfPHz1LxKmQeMLwtboNkCjVsLX/7eIYvYQi4uLOMmXjdTV
+      gmaFIMxE8xBIbkioNxQcpPfh87mRyZZw594tbG3sIzjgNXyh7Eajwb0erFUXytaKUYtD82Dk
+      Qtk89GyhbFVuoFI+Q7Vex/7+AeKTURQLRaii05SFsvUsit0OKy6UrQcr9IVRC2Xz0pOFst0+
+      P0I+P0KhMcwkk+jzebC9s4fkNC3KTLx+cFnI7/cDAKamEoaIaQc9ByDMxPDboBc/wdUc8/KM
+      F63wKSgjarT7RFi3NRhRw8hPhFmhhuEGuDguM2J6dK/Xa8idIN7pvHlrAC9Pj64HK/QF76fj
+      eDUYWcPUB2FG5HiMGAJZoYYVNBhVg3e/WmU7RFGEwGj2WcLGOL744osvzCp+epzG8noanj4/
+      fB635vb1cgFPlpZRV0QMBfz6NOynsJzah7fPD5/HpaktUyQ8+u4beIbGkUmvY2tnD0MjITgd
+      N/8LKFXP8LtvHyE+GcHTxW+RO6thNKhtQZHc8T42NjchMwdSG2soVCQEhwdxUxVMVbC+soTd
+      gyykSgG7B4fw9Q/B47r5EEKunWF5ZQ3ZQgVnp4dI7R5iZDQEh3jzvjjcTWFzKwW3R8T3i6tw
+      uN0Y8PfduD0ASNUivv5uCQEPsLy6AcHTj36ftmOrkNnD8tYJ6sUTk6IQjCGfy0KSFIgCQ13S
+      9wDpNHeCmYV7qFcKuqVICuAQFEh6NIguRMJBNBSGmixiNjaGXL6kqYTL04fhlnkZpFodWh8L
+      DofGEfB7UCkVEIomIcp1aDptCyJisTgcDhEMDKosQVa0qXB6++F1MchqAw3VjcToIAqVmqYa
+      g4ODqNfrkOsNuLwu1GqSpvZgKrZ3DjDQ70M2d4a7D26jeJLRVEKV6zjMVeERFTAw87JADIC7
+      L4Dp+ASy2ZyuGm6XG6e5DGRF/yjNOxDAdGwSmcyx9saMQZYbkBoNyI0aTvN5uD3aEpuMqc9r
+      1DEWmYJDqqKhUUZ6cxXOgTAi4SEUCqeoSY0b//UHAKY2sLy2hZmZKQQGg4hHgzg+LmrSIFXL
+      GJ1IQKqUIUkVnJ6dwa3xQVRDFRAbH0G21MBbyQRK+aym9qoioS5J2Etvo96QkD3Jgjm1/fWX
+      ahXU61Vs7+2jf3DU3GsAWaph7+AY0cmYpmFDC8ZweLCP4dC4ptP1ZQ1V7B5kEItPwqHx4k2R
+      atjZ3YPo7sPEyACypTomwiOaalTPCtg/ysAfGIYbEhSHD6GgtlnQTjNHyBXOEBqPolHOwzMQ
+      1HTaZ2oD21s7EFw+jI0GcJQrIh6d0HQxqyoNpNO7GA5NwCNIyFcUjI1qG8oVTzPIlyVMRsaw
+      l97FyHgUfR7t92EqlSp8Xhf2D44wPhHRNAwDADCGSq0GQWnQRTBhb+gxK2FryACErSEDELaG
+      DEDYGjIAYWvIAIStIQMQtoYMQNia/wcKqOq0hvr0iAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
